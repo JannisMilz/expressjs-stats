@@ -1,6 +1,6 @@
 {
   "name": "expressjs-stats",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Simple and easy statistics for your expressjs REST API",
   "main": "index.js",
   "scripts": {
