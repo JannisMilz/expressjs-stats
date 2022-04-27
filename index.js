@@ -32,13 +32,14 @@ async function routesTracker(req, res, next) {
     next()
 }
 
-async function getStats( range = 'alltime') {
+async function getStats(range = 'alltime') {
     var time_period = 0
-    if(range !== 'alltime') time_period = ms(range)
+    if(range != 'alltime') time_period = ms(range)
+    console.log("time_period: ", time_period);
     if(!time_period) return 'Invalid range'
 
     var timestamp_gte = 0
-    if(range !== 'alltime') timestamp_gte = +new Date() - time_period
+    if(range != 'alltime') timestamp_gte = +new Date() - time_period
 
     const getData = await prisma.requests.findMany({
         where: {
