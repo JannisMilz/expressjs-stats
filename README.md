@@ -13,7 +13,7 @@ npm install expressjs-stats
 The setup is super easy and done in under a minute. Just import `routesTracker` from `expressjs-stats`:
 
 ```js
-const { routesTracker } = require('expressjs-statistics')
+const { routesTracker } = require('expressjs-stats')
 ```
 
 After that add it to any route you want to get tracked.
@@ -31,7 +31,7 @@ And you are completely done. Congratulations!
 We do not only want to track them but also access the data. Simply import `getStats` from `expressjs-stats`.
 
 ```js
-const { routesTracker, getStats } = require('expressjs-statistics')
+const { routesTracker, getStats } = require('expressjs-stats')
 ```
 
 Now await this function anywhere you want and get the data.
