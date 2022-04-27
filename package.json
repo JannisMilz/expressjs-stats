@@ -1,11 +1,11 @@
 {
   "name": "expressjs-stats",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Simple and easy statistics for your expressjs REST API",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall": "prisma generate && npx prisma migrate"
+    "postinstall": "prisma generate && prisma migrate dev --name init"
   },
   "repository": {
     "type": "git",
