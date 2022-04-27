@@ -57,3 +57,7 @@ app.get('/stats', routesTracker, async(req, res) => {
     return res.send(stats)
 })
 ```
+
+**Example Response:**
+```json
+```
