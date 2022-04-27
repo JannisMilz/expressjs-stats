@@ -36,7 +36,7 @@ async function getStats(range = 'alltime') {
     var time_period = 0
     if(range != 'alltime') time_period = ms(range)
     console.log("time_period: ", time_period);
-    if(!time_period) return 'Invalid range'
+    if(!time_period && time_period !== 0) return 'Invalid range'
 
     var timestamp_gte = 0
     if(range != 'alltime') timestamp_gte = +new Date() - time_period
